@@ -1,0 +1,21 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    margin: 80px 170px;
+}
+.title{
+    font-size: 35px;
+    font-weight:600;
+    padding: 0px 30px;
+    background:linear-gradient(135deg, #ff00ff, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.about-para{
+    font-size: 20px;
+    line-height: 40px;
+
+}
