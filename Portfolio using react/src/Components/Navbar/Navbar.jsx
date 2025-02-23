@@ -1,7 +1,6 @@
 import React from 'react'
 import './Navbar.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import menuImg from './menu-icon.png';
 import { useRef } from 'react';
 
 
@@ -17,7 +16,7 @@ const Navbar = () => {
     <div className='navbar'>
     {/*<img src={logo} alt="" style={{ height: "100px", width: "100px" }}/>*/}
     <h1 className='logo'>Shajitha S.</h1>
-    <img src={menuImg} alt="Menu Icon" onClick={openMenu} />
+    <i className="fa-solid fa-bars" onClick={openMenu}></i>
     <ul className='nav-menu' ref={menuRef} >
         <li><AnchorLink className='anchor-link' href='#home'>Home</AnchorLink></li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about'>About me</AnchorLink></li>
