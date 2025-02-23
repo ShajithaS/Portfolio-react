@@ -25,6 +25,9 @@
     cursor: pointer;
     transition: 0.5s;
 }
+.connect-anchor-link{
+    text-decoration: none;
+}
 .nav-connect:hover{
     transform:scale(1.05)
 }
@@ -42,5 +45,8 @@
 }
 .anchor-link:hover{
     background: linear-gradient(135deg, #ff00ff, #00ffff);
-    border:none
+    border:none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
 }
