@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menuImg from './menu-icon.png';
+import { useRef } from 'react';
 
 
 const Navbar = () => {
