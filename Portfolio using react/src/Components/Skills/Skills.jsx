@@ -31,6 +31,12 @@ const Skills = () => {
                 </ul>
             </div>
             <div class="skill-card">
+                <h2>Query Language</h2>
+                <ul>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div class="skill-card">
                 <h2>Tools & IDEs</h2>
                 <ul>
                     <li>Git</li>
