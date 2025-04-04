@@ -14,7 +14,7 @@
     flex-direction: column;
     gap: 80px;
 }
-.skill-content{
+/*.skill-content{
     display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -25,6 +25,24 @@
             border-radius: 10px;
             width: 250px;
     
+}*/
+.skill-content {
+    display: grid;  /* Use grid for better alignment */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 50px;
+    justify-content: center; /* Center align content */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%; /* Take full grid space */
+    max-width: 300px; /* Prevent too wide cards */
+    text-align: center; /* Center content */
+    transition: transform 0.3s;
 }
 .skill-card h2 {
     color:#57cfff;

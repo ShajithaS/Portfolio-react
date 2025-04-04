@@ -1,4 +1,4 @@
-.about{
+/*.about{
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -18,4 +18,69 @@
     font-size: 20px;
     line-height: 40px;
 
+}*/
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;  /* Reduce gap for smaller screens */
+    align-items: center;
+    margin: 80px 120px; /* Use percentage for better responsiveness */
+    /*max-width: 1200px; /* Prevents excessive width on large screens */
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0px 30px;
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-para {
+    font-size: 20px;
+    line-height: 1.8; /* More readable spacing */
+    text-align: justify; /* Makes paragraph look better */
+    max-width: 1200px; /* Prevents overly stretched text */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .about {
+        margin: 60px 5%; /* Reduce margin for tablets */
+        gap: 40px;
+    }
+
+
+    .about-para {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        margin: 40px 5%;
+        gap: 30px;
+    }
+
+    .about-para {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        margin: 30px 5%;
+        gap: 20px;
+    }
+
+
+    .about-para {
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center; /* Center paragraph for small screens */
+    }
 }

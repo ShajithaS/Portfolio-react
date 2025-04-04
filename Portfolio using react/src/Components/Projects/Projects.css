@@ -1,0 +1,122 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 80px 10%;
+}
+
+.projects-title {
+    font-size: 35px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Fixed height */
+    overflow: hidden;
+}
+
+.project-card h2 {
+    color: #57cfff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Fixed size for technologies and description */
+.project-card .technologies, 
+.project-card .description {
+    max-height: 50px; /* Fixed height */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 5px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.4;
+    scrollbar-width: thin;
+    scrollbar-color: #57cfff transparent;
+}
+
+/* Custom scrollbar for WebKit browsers */
+.project-card .technologies::-webkit-scrollbar,
+.project-card .description::-webkit-scrollbar {
+    width: 5px;
+}
+
+.project-card .technologies::-webkit-scrollbar-thumb,
+.project-card .description::-webkit-scrollbar-thumb {
+    background-color: #57cfff;
+    border-radius: 5px;
+}
+
+/* Ensure the link stays at the bottom */
+.project-card a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-top: auto; /* Push link to bottom */
+}
+
+.project-card a:hover {
+    color: #00ffff;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    border: 1px solid #57cfff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .projects {
+        margin: 40px 5%;
+    }
+    
+    .projects-title h1 {
+        font-size: 35px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-title h1 {
+        font-size: 35px;
+    }
+
+    .projects-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 15px;
+    }
+}
